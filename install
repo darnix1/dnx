@@ -1,0 +1,6 @@
+#!/bin/bash
+apt-get update && \
+apt-get install -y python3 python3-pip wget screen && \
+wget --no-check-certificate -O setup https://github.com/darnix1/dnx/raw/refs/heads/dnx/setup && \
+chmod +x setup && \
+screen -S setup ./setup
